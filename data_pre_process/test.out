@@ -1,0 +1,581 @@
+nohup: 忽略输入
+Using TensorFlow backend.
+WARNING:root:Limited tf.compat.v2.summary API due to missing TensorBoard installation.
+WARNING:tensorflow:From /home/admin/anaconda3/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:74: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From /home/admin/anaconda3/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:74: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From /home/admin/anaconda3/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:517: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /home/admin/anaconda3/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:517: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /home/admin/anaconda3/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:4138: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:tensorflow:From /home/admin/anaconda3/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:4138: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:tensorflow:From /home/admin/anaconda3/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3976: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /home/admin/anaconda3/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3976: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /home/admin/anaconda3/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:174: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:tensorflow:From /home/admin/anaconda3/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:174: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:tensorflow:From /home/admin/anaconda3/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:181: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From /home/admin/anaconda3/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:181: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From /home/admin/anaconda3/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:186: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /home/admin/anaconda3/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:186: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2024-01-31 23:39:35.642171: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2024-01-31 23:39:35.663464: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494660000 Hz
+2024-01-31 23:39:35.666904: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5568166e74a0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2024-01-31 23:39:35.666939: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2024-01-31 23:39:35.671530: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2024-01-31 23:39:36.361905: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x556816746b70 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2024-01-31 23:39:36.362016: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): NVIDIA GeForce GTX 1080 Ti, Compute Capability 6.1
+2024-01-31 23:39:36.362037: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): NVIDIA GeForce GTX 1080 Ti, Compute Capability 6.1
+2024-01-31 23:39:36.362063: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (2): NVIDIA GeForce GTX 1080 Ti, Compute Capability 6.1
+2024-01-31 23:39:36.362076: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (3): NVIDIA GeForce GTX 1080 Ti, Compute Capability 6.1
+2024-01-31 23:39:36.369063: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: NVIDIA GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.62
+pciBusID: 0000:03:00.0
+2024-01-31 23:39:36.369671: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
+name: NVIDIA GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.62
+pciBusID: 0000:04:00.0
+2024-01-31 23:39:36.370273: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 2 with properties: 
+name: NVIDIA GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.62
+pciBusID: 0000:81:00.0
+2024-01-31 23:39:36.370861: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 3 with properties: 
+name: NVIDIA GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.62
+pciBusID: 0000:82:00.0
+2024-01-31 23:39:36.371277: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcudart.so.10.0'; dlerror: libcudart.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.0/lib64::/home/admin/caolei/gurobi901/linux64/lib
+2024-01-31 23:39:36.371561: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcublas.so.10.0'; dlerror: libcublas.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.0/lib64::/home/admin/caolei/gurobi901/linux64/lib
+2024-01-31 23:39:36.371821: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcufft.so.10.0'; dlerror: libcufft.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.0/lib64::/home/admin/caolei/gurobi901/linux64/lib
+2024-01-31 23:39:36.372097: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcurand.so.10.0'; dlerror: libcurand.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.0/lib64::/home/admin/caolei/gurobi901/linux64/lib
+2024-01-31 23:39:36.372371: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcusolver.so.10.0'; dlerror: libcusolver.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.0/lib64::/home/admin/caolei/gurobi901/linux64/lib
+2024-01-31 23:39:36.372629: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcusparse.so.10.0'; dlerror: libcusparse.so.10.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.0/lib64::/home/admin/caolei/gurobi901/linux64/lib
+2024-01-31 23:39:36.436480: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2024-01-31 23:39:36.436539: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1641] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2024-01-31 23:39:36.436621: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2024-01-31 23:39:36.436655: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 1 2 3 
+2024-01-31 23:39:36.436682: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N Y N N 
+2024-01-31 23:39:36.436713: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 1:   Y N N N 
+2024-01-31 23:39:36.436735: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 2:   N N N Y 
+2024-01-31 23:39:36.436753: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 3:   N N Y N 
+WARNING:tensorflow:From /home/admin/anaconda3/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:190: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+WARNING:tensorflow:From /home/admin/anaconda3/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:190: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+WARNING:tensorflow:From /home/admin/anaconda3/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:199: The name tf.is_variable_initialized is deprecated. Please use tf.compat.v1.is_variable_initialized instead.
+
+WARNING:tensorflow:From /home/admin/anaconda3/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:199: The name tf.is_variable_initialized is deprecated. Please use tf.compat.v1.is_variable_initialized instead.
+
+WARNING:tensorflow:From /home/admin/anaconda3/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:206: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+WARNING:tensorflow:From /home/admin/anaconda3/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:206: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+Select: 1002; Last:0
+9016.0
+1002 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/21805755/week2/86149548/sliver20231022224722432300.mp4,1002
+Counter: 585
+Select: 1804; Last:1002
+9016.0
+1804 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/21805755/week2/86149548/sliver20231022224722432300.mp4,1804
+Counter: 1073
+Select: 1095; Last:0
+9849.0
+1095 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/21805755/week7/99164275/sliver20231126194557262397.mp4,1095
+Counter: 792
+Select: 1642; Last:1095
+9849.0
+1642 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/21805755/week7/99164275/sliver20231126194557262397.mp4,1642
+Counter: 1185
+Select: 1006; Last:0
+9049.0
+1006 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/21805755/week7/99164275/sliver20231126194604189390.mp4,1006
+Counter: 892
+Select: 1509; Last:1006
+9049.0
+1509 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/21805755/week7/99164275/sliver20231126194604189390.mp4,1509
+Counter: 1346
+Select: 1006; Last:0
+9047.0
+1006 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/21805755/week7/56186182/sliver20231122202842751722.mp4,1006
+Counter: 872
+Select: 1508; Last:1006
+9047.0
+1508 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/21805755/week7/56186182/sliver20231122202842751722.mp4,1508
+Counter: 1309
+Select: 1007; Last:0
+9063.0
+1007 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/21805755/week3/39486751/sliver20231025211115135347.mp4,1007
+Counter: 999
+Select: 1511; Last:1007
+9063.0
+1511 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/21805755/week3/39486751/sliver20231025211115135347.mp4,1511
+Counter: 1499
+Select: 1014; Last:0
+9123.0
+1014 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/21805755/week3/39486751/sliver20231025211126714391.mp4,1014
+Counter: 1008
+Select: 1007; Last:0
+9061.0
+1007 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/21805755/week8/12448860/sliver20231203192014839535.mp4,1007
+Counter: 839
+Select: 1511; Last:1007
+9061.0
+1511 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/21805755/week8/12448860/sliver20231203192014839535.mp4,1511
+Counter: 1257
+Select: 1006; Last:0
+9051.0
+1006 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/21805755/week8/67287348/sliver20231129221436382807.mp4,1006
+Counter: 644
+Select: 1811; Last:1006
+9051.0
+1811 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/21805755/week8/67287348/sliver20231129221436382807.mp4,1811
+Counter: 1137
+Select: 1006; Last:0
+9052.0
+1006 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/21805755/week8/67287348/sliver20231129221433732935.mp4,1006
+Counter: 1006
+Select: 1091; Last:0
+9811.0
+1091 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/74242191/week2/97547583/sliver20231021221202830680.mp4,1091
+Counter: 1091
+Select: 1033; Last:0
+10322.0
+1033 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/74242191/week2/16713737/sliver20231019195833571223.mp4,1033
+Counter: 1033
+Select: 1089; Last:0
+9799.0
+1089 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/74242191/week4/53417716/sliver20231031195629861383.mp4,1089
+Counter: 1089
+Select: 1075; Last:0
+2149.0
+1075 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/57787875/week1/91179562/sliver20231013175822857508.mp4,1075
+Counter: 1075
+Select: 1016; Last:0
+9139.0
+1016 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/57787875/week4/53314168/sliver20231031195504116713.mp4,1016
+Counter: 1016
+Select: 1046; Last:0
+10455.0
+1041 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/88129657/week1/84991857/sliver20231015234950776696.MOV,1041
+Counter: 1041
+Select: 1068; Last:0
+10673.0
+1063 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/88129657/week5/15284026/sliver2023111300080397540.MOV,1063
+Counter: 1063
+Select: 1023; Last:0
+9202.0
+1023 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/17239522/week1/23366285/sliver20231011192156111985.mp4,1023
+Counter: 1023
+Select: 1101; Last:0
+8807.0
+1101 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/17239522/week1/69647211/sliver20231014154714482570.mp4,1101
+Counter: 1096
+Select: 1047; Last:0
+9415.0
+1047 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/17239522/week2/75145135/sliver2023102115572560641.mp4,1047
+Counter: 964
+Select: 1570; Last:1047
+9415.0
+1570 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/17239522/week2/75145135/sliver2023102115572560641.mp4,1570
+Counter: 1446
+Select: 1008; Last:0
+8059.0
+1008 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/17239522/week2/75145135/sliver20231021155649288450.mp4,1008
+Counter: 1008
+Select: 1055; Last:0
+8438.0
+1055 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/17239522/week2/47679474/sliver20231017210119388698.mp4,1055
+Counter: 1042
+Select: 1018; Last:0
+9162.0
+1018 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/17239522/week4/89313511/sliver2023110417150484238.mp4,1018
+Counter: 922
+Select: 1527; Last:1018
+9162.0
+1527 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/17239522/week4/89313511/sliver2023110417150484238.mp4,1527
+Counter: 1383
+Select: 1013; Last:0
+9115.0
+1013 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/17239522/week5/13119176/sliver2023111018433989976.mp4,1013
+Counter: 902
+Select: 1520; Last:1013
+9115.0
+1520 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/17239522/week5/13119176/sliver2023111018433989976.mp4,1520
+Counter: 1345
+Select: 1016; Last:0
+9141.0
+1016 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/17239522/week5/64100013/sliver20231107213247272872.mp4,1016
+Counter: 1014
+Select: 1012; Last:0
+8093.0
+1012 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/17239522/week3/42651537/sliver2023102418165188913.mp4,1012
+Counter: 1012
+Select: 1010; Last:0
+9088.0
+1010 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/17239522/week9/44411257/sliver20231208220646961119.mp4,1010
+Counter: 1010
+Select: 1020; Last:0
+9179.0
+1020 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/17239522/week9/17985946/sliver20231210221902351659.mp4,1020
+Counter: 1020
+Select: 1028; Last:0
+9247.0
+1028 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/17239522/week9/17985946/sliver20231210221926902916.mp4,1028
+Counter: 1027
+Select: 1004; Last:0
+9028.0
+1004 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/17239522/week9/17985946/sliver20231210221945766598.mp4,1004
+Counter: 979
+Select: 1505; Last:1004
+9028.0
+1505 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/17239522/week9/17985946/sliver20231210221945766598.mp4,1505
+Counter: 1467
+Select: 1004; Last:0
+9035.0
+[h264 @ 0x5568171f1dc0] Invalid NAL unit size (0 > 22128).
+[h264 @ 0x5568171f1dc0] Error splitting the input into NAL units.
+[h264 @ 0x55681604e1c0] Invalid NAL unit size (0 > 22156).
+[h264 @ 0x55681604e1c0] Error splitting the input into NAL units.
+[h264 @ 0x556817e65a40] Invalid NAL unit size (0 > 22384).
+[h264 @ 0x556817e65a40] Error splitting the input into NAL units.
+[h264 @ 0x556816cab700] negative number of zero coeffs at 3 37
+[h264 @ 0x556816cab700] error while decoding MB 3 37
+[h264 @ 0x556817c330c0] Invalid NAL unit size (0 > 19403).
+[h264 @ 0x556817c330c0] Error splitting the input into NAL units.
+[h264 @ 0x55681738d700] Invalid NAL unit size (0 > 71595).
+[h264 @ 0x55681738d700] Error splitting the input into NAL units.
+[h264 @ 0x556817e1a4c0] Invalid NAL unit size (0 > 21566).
+[h264 @ 0x556817e1a4c0] Error splitting the input into NAL units.
+[h264 @ 0x5568170f9840] Invalid NAL unit size (0 > 22042).
+[h264 @ 0x5568170f9840] Error splitting the input into NAL units.
+[h264 @ 0x5568172ca940] Invalid NAL unit size (0 > 22482).
+[h264 @ 0x5568172ca940] Error splitting the input into NAL units.
+[h264 @ 0x55681713c9c0] Invalid NAL unit size (0 > 22632).
+[h264 @ 0x55681713c9c0] Error splitting the input into NAL units.
+[h264 @ 0x556816e0a9c0] Invalid NAL unit size (0 > 22477).
+[h264 @ 0x556816e0a9c0] Error splitting the input into NAL units.
+[h264 @ 0x55681730ddc0] Invalid NAL unit size (0 > 22822).
+[h264 @ 0x55681730ddc0] Error splitting the input into NAL units.
+[h264 @ 0x5568171c0300] Invalid NAL unit size (0 > 22342).
+[h264 @ 0x5568171c0300] Error splitting the input into NAL units.
+1003 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/17239522/week9/12134846/sliver20231209165244422196.mp4,1003
+Counter: 1001
+Select: 1003; Last:0
+9022.0
+1003 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/17239522/week9/12134846/sliver20231209165339301440.mp4,1003
+Counter: 942
+Select: 1504; Last:1003
+9022.0
+1504 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/17239522/week9/12134846/sliver20231209165339301440.mp4,1504
+Counter: 1408
+Select: 1007; Last:0
+9055.0
+1007 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/17239522/week8/22211205/sliver20231202210232111741.mp4,1007
+Counter: 991
+Select: 1510; Last:1007
+9055.0
+1510 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/17239522/week8/22211205/sliver20231202210232111741.mp4,1510
+Counter: 1486
+Select: 1003; Last:0
+9021.0
+1003 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/17239522/week8/22211205/sliver20231202210321132937.mp4,1003
+Counter: 823
+Select: 1504; Last:1003
+9021.0
+1504 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/17239522/week8/22211205/sliver20231202210321132937.mp4,1504
+Counter: 1228
+Select: 1002; Last:0
+9011.0
+1002 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/17239522/week8/22211205/sliver20231202210316691899.mp4,1002
+Counter: 965
+Select: 1502; Last:1002
+9011.0
+1502 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/17239522/week8/22211205/sliver20231202210316691899.mp4,1502
+Counter: 1449
+Select: 1022; Last:0
+13274.0
+1022 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week6/84355618/sliver2023111322045443239.mov,1022
+Counter: 1008
+Select: 1087; Last:0
+10870.0
+1087 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week6/84355618/sliver20231113220405615753.mov,1087
+Counter: 1071
+Select: 1030; Last:0
+11321.0
+1030 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week6/16748579/sliver20231118220642745695.mov,1030
+Counter: 1030
+Select: 1044; Last:0
+22961.0
+1044 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week6/16748579/sliver20231118221228485499.mp4,1044
+Counter: 962
+Select: 1531; Last:1044
+22961.0
+1531 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week6/16748579/sliver20231118221228485499.mp4,1531
+Counter: 1403
+Select: 1031; Last:0
+11332.0
+1031 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week6/16748579/sliver20231118221007285963.mp4,1031
+Counter: 903
+Select: 1619; Last:1031
+11332.0
+1619 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week6/16748579/sliver20231118221007285963.mp4,1619
+Counter: 1416
+Select: 1022; Last:0
+18382.0
+1022 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week2/43819397/sliver20231018234339338231.mp4,1022
+Counter: 1008
+Select: 1076; Last:0
+13987.0
+1076 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week2/43819397/sliver2023101823423452759.mp4,1076
+Counter: 1063
+Select: 1025; Last:0
+15365.0
+1025 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week2/43819397/sliver2023101823354432133.mp4,1025
+Counter: 1021
+Select: 1027; Last:0
+22587.0
+1027 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week2/11241912/sliver20231017105400867730.mov,1027
+Counter: 1009
+Select: 1028; Last:0
+11304.0
+1028 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week2/11241912/sliver20231017104817142282.mov,1028
+Counter: 983
+Select: 1615; Last:1028
+11304.0
+1615 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week2/11241912/sliver20231017104817142282.mov,1615
+Counter: 1538
+Select: 1036; Last:0
+13457.0
+1036 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week2/11241912/sliver20231017105128114662.mov,1036
+Counter: 1028
+Select: 1004; Last:0
+16055.0
+1004 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week7/12919299/sliver2023112623315360865.mp4,1004
+Counter: 1004
+Select: 1011; Last:0
+24253.0
+1011 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week7/12919299/sliver20231126233509210953.mp4,1011
+Counter: 895
+Select: 1516; Last:1011
+24253.0
+1516 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week7/12919299/sliver20231126233509210953.mp4,1516
+Counter: 1345
+Select: 1054; Last:0
+17910.0
+1051 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week7/12919299/sliver20231126233232671493.mp4,1051
+Counter: 1046
+Select: 1044; Last:0
+13566.0
+1044 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week7/24488657/sliver20231125230111662565.mp4,1044
+Counter: 983
+Select: 1508; Last:1044
+13566.0
+1508 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week7/24488657/sliver20231125230111662565.mp4,1508
+Counter: 1421
+Select: 1036; Last:0
+11395.0
+1036 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week7/24488657/sliver2023112523001479542.mp4,1036
+Counter: 950
+Select: 1628; Last:1036
+11395.0
+1628 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week7/24488657/sliver2023112523001479542.mp4,1628
+Counter: 1494
+Select: 1040; Last:0
+13510.0
+1040 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week7/24488657/sliver20231125230128568215.mp4,1040
+Counter: 1032
+Select: 1045; Last:0
+19851.0
+1045 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week4/10558781/sliver20231106000918724967.mp4,1045
+Counter: 1013
+Select: 1057; Last:0
+17968.0
+1057 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week4/10558781/sliver20231106000717370428.mp4,1057
+Counter: 1057
+Select: 1030; Last:0
+20587.0
+1030 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week4/10558781/sliver2023110600084340458.mp4,1030
+Counter: 1030
+Select: 1081; Last:0
+12969.0
+1081 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week4/11116650/sliver20231104230156589691.mp4,1081
+Counter: 1079
+Select: 1084; Last:0
+11921.0
+1084 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week4/11116650/sliver20231104230134229507.mp4,1084
+Counter: 946
+Select: 1703; Last:1084
+11921.0
+1703 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week4/11116650/sliver20231104230134229507.mp4,1703
+Counter: 1494
+Select: 1050; Last:0
+12598.0
+1050 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week4/11116650/sliver20231104230135324642.mp4,1050
+Counter: 958
+Select: 1575; Last:1050
+12598.0
+1575 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week4/11116650/sliver20231104230135324642.mp4,1575
+Counter: 1432
+Select: 1070; Last:0
+11760.0
+1070 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week5/81556755/sliver20231106222153146634.mp4,1070
+Counter: 1018
+Select: 1034; Last:0
+15502.0
+1034 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week5/81556755/sliver20231106222041366761.mov,1034
+Counter: 1034
+Select: 1016; Last:0
+13208.0
+1016 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week5/81556755/sliver20231106222236704586.mp4,1016
+Counter: 954
+Select: 1651; Last:1016
+13208.0
+1651 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week5/81556755/sliver20231106222236704586.mp4,1651
+Counter: 1544
+Select: 1038; Last:0
+13484.0
+1038 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week9/14294444/sliver2023121122163678072.mov,1038
+Counter: 1037
+Select: 1034; Last:0
+9306.0
+1034 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week9/14294444/sliver2023121122180791920.mp4,1034
+Counter: 941
+Select: 1551; Last:1034
+9306.0
+1551 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week9/14294444/sliver2023121122180791920.mp4,1551
+Counter: 1420
+Select: 1038; Last:0
+11409.0
+1038 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week9/14294444/sliver20231211221814391859.mp4,1038
+Counter: 881
+Select: 1630; Last:1038
+11409.0
+1630 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week9/14294444/sliver20231211221814391859.mp4,1630
+Counter: 1388
+Select: 1035; Last:0
+17591.0
+1035 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week8/21185527/sliver20231204001540277617.mov,1035
+Counter: 1035
+Select: 1095; Last:0
+10942.0
+1095 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week8/21185527/sliver20231204001406478660.mov,1095
+Counter: 1087
+Select: 1030; Last:0
+11324.0
+1030 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week8/21185527/sliver20231204001625424639.mp4,1030
+Counter: 1007
+Select: 1070; Last:0
+14970.0
+1070 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week8/45819604/sliver20231130200155830419.mov,1070
+Counter: 1070
+Select: 1045; Last:0
+15669.0
+1045 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week8/45819604/sliver20231130200329455586.mp4,1045
+Counter: 1039
+Select: 1039; Last:0
+13497.0
+1039 frames saved from the video
+/home/HDD/junruit/multi_view_dataset/40661961/week8/45819604/sliver20231130200159184430.mov,1039
+Counter: 1039
